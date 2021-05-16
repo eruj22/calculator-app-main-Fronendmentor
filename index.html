@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet"> 
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>calc</h1>
+      <div class="header__theme">
+        <span>theme</span>
+        <!-- <link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" /> -->
+        <div class="switch-toggle switch-3 switch-candy">
+          <input id="1" name="state-d" type="radio" checked="checked" />
+          <label for="1" onclick="">1</label>
+        
+          <input id="2" name="state-d" type="radio" checked="" />
+          <label for="2" class="disabled" onclick="">2</label>
+        
+          <input id="3" name="state-d" type="radio" />
+          <label for="3" onclick="">3</label>
+        
+          <a></a>
+        </div>
+
+      </div>
+    </header>
+
+    <section class="screen">0
+      <!-- <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div> -->
+    </section>
+
+    <section class="keyboard">
+      <button data-type="number" id="7" value="7">7</button>
+      <button data-type="number" id="8" value="8">8</button>
+      <button data-type="number" id="9" value="9">9</button>
+      <button data-type="number" class="delete" id="del" value="del">DEL</button>
+      <button data-type="number" id="4" value="4">4</button>
+      <button data-type="number" id="5" value="5">5</button>
+      <button data-type="number" id="6" value="6">6</button>
+      <button data-type="operator" data-key="sum" id="sum" value="+">+</button>
+      <button data-type="number" id="1" value="1">1</button>
+      <button data-type="number" id="2" value="2">2</button>
+      <button data-type="number" id="3" value="3">3</button>
+      <button data-type="operator" data-key="subtract" id="sub" value="-">-</button>
+      <button data-type="number" decimal" id="dot" value=".">.</button>
+      <button data-type="number" id="0" value="0">0</button>
+      <button data-type="operator" data-key="divide" id="div" value="/">/</button>
+      <button data-type="operator" data-key="multiply" id="mul" value="*">*</button>
+      <button data-type="number" class="reset" id="reset" value="C">RESET</button>
+      <button data-type="equal" class="equals" id="equals" value="=">=</button>
+    </section>
+  </div>
+
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
