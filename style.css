@@ -16,23 +16,57 @@
     --clr-key3-shadow: hsl(28, 16%, 65%);
     --clr-text1: hsl(221, 14%, 31%);
     --clr-text2: rgb(255, 255, 255);
+    --clr-text3: rgb(255, 255, 255);
+    --clr-text4: rgb(255, 255, 255);
+}
+
+body.theme2 {
+    --clr-bg-main: hsl(0, 0%, 90%);
+    --clr-bg-toggle: hsl(0, 5%, 81%);
+    --clr-bg-screen: hsl(0, 0%, 93%);
+    --clr-key1-bg: hsl(185, 42%, 37%);
+    --clr-key1-shadow: hsl(185, 58%, 25%);
+    --clr-key2-bg: hsl(25, 98%, 40%);
+    --clr-key2-shadow: hsl(25, 99%, 27%);
+    --clr-key3-bg: hsl(45, 7%, 89%);
+    --clr-key3-shadow: hsl(35, 11%, 61%);
+    --clr-text1: hsl(60, 10%, 19%);
+    --clr-text2: hsl(60, 10%, 19%);
+    --clr-text3: rgb(255, 255, 255);
+    --clr-text4: rgb(255, 255, 255);
+}
+
+body.theme3 {
+    --clr-bg-main: hsl(268, 75%, 9%);
+    --clr-bg-toggle: hsl(268, 71%, 12%);
+    --clr-bg-screen: hsl(268, 71%, 12%);
+    --clr-key1-bg: hsl(281, 89%, 26%);
+    --clr-key1-shadow: hsl(285, 91%, 52%);
+    --clr-key2-bg: hsl(176, 100%, 44%);
+    --clr-key2-shadow: hsl(177, 92%, 70%);
+    --clr-key3-bg: hsl(268, 47%, 21%);
+    --clr-key3-shadow: hsl(290, 70%, 36%);
+    --clr-text1: hsl(52, 100%, 62%);
+    --clr-text2: hsl(52, 100%, 62%);
+    --clr-text3: hsl(198, 20%, 13%);
+    --clr-text4: rgb(255, 255, 255);
 }
 
 body {
     background-color: var(--clr-bg-main);
     color: var(--clr-text2);
-    font-size: 32px;
+    font-size: 20px;
     font-family: 'Spartan', sans-serif;
 }
 
 .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 10% auto 0;
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
 }
 
@@ -42,10 +76,9 @@ body {
 
 span {
     text-transform: uppercase;
-}
-
-.switch-toggle {
-    width: 10em;
+    font-size: 16px;
+    margin-right: 2rem;
+    align-self: end;
 }
 
 .screen {
@@ -61,6 +94,7 @@ button {
     background-color: var(--clr-key3-bg);
     font-size: 32px;
     border-radius: .5rem;
+    color: var(--clr-text1);
     box-shadow: 1px 0 1px 1px var(--clr-key3-shadow);
     cursor: pointer;
 }
@@ -78,20 +112,36 @@ button {
 #reset {
     grid-column: span 2;
     background-color: var(--clr-key1-bg);
-    color: var(--clr-text2);
+    color: var(--clr-text4);
 }
 
 #del {
     background-color: var(--clr-key1-bg);
-    color: var(--clr-text2);
+    color: var(--clr-text4);
 }
 
 #equals {
     grid-column: span 2;
     background-color: var(--clr-key2-bg);
-    color: var(--clr-text2);
+    color: var(--clr-text3);
 }
 
 [data-state="selected"] {
     background-color: white;
+}
+
+/* Switch */
+.switch-3 {
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 16px;
+}
+
+.numbers {
+    display: flex;
+}
+
+p {
+    margin-left: 10px;
+    font-size: 16px;
 }

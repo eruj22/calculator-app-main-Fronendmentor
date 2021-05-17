@@ -20,19 +20,19 @@
       <div class="header__theme">
         <span>theme</span>
         <!-- <link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" /> -->
-        <div class="switch-toggle switch-3 switch-candy">
-          <input id="1" name="state-d" type="radio" checked="checked" />
-          <label for="1" onclick="">1</label>
-        
-          <input id="2" name="state-d" type="radio" checked="" />
-          <label for="2" class="disabled" onclick="">2</label>
-        
-          <input id="3" name="state-d" type="radio" />
-          <label for="3" onclick="">3</label>
-        
-          <a></a>
+        <div class="theme-switcher">
+          <div class="numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div class="switch-toggle switch-3 switch-candy">
+            <input id="1" name="state" class="active" type="radio" checked />
+            <input id="2" name="state" type="radio" />       
+            <input id="3" name="state" type="radio" />       
+            <a></a>
+          </div>  
         </div>
-
       </div>
     </header>
 
@@ -45,7 +45,7 @@
       <button data-type="number" id="7" value="7">7</button>
       <button data-type="number" id="8" value="8">8</button>
       <button data-type="number" id="9" value="9">9</button>
-      <button data-type="number" class="delete" id="del" value="del">DEL</button>
+      <button data-type="delete" class="delete" id="del" value="del">DEL</button>
       <button data-type="number" id="4" value="4">4</button>
       <button data-type="number" id="5" value="5">5</button>
       <button data-type="number" id="6" value="6">6</button>
@@ -54,11 +54,11 @@
       <button data-type="number" id="2" value="2">2</button>
       <button data-type="number" id="3" value="3">3</button>
       <button data-type="operator" data-key="subtract" id="sub" value="-">-</button>
-      <button data-type="number" decimal" id="dot" value=".">.</button>
+      <button data-type="number" id="dot" value=".">.</button>
       <button data-type="number" id="0" value="0">0</button>
       <button data-type="operator" data-key="divide" id="div" value="/">/</button>
-      <button data-type="operator" data-key="multiply" id="mul" value="*">*</button>
-      <button data-type="number" class="reset" id="reset" value="C">RESET</button>
+      <button data-type="operator" data-key="multiply" id="mul" value="*">&#88;</button>
+      <button data-type="reset" class="reset" id="reset" value="C">RESET</button>
       <button data-type="equal" class="equals" id="equals" value="=">=</button>
     </section>
   </div>
