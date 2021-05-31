@@ -1,5 +1,8 @@
 # Frontend Mentor - Calculator app
 
+At the start of the project I thought that I would know how to do it from scratch. I was mistaken. After first tying myself, I then followed tutorial on YouTube on how to set up the logic. Instructor explained everything and I have learned some new things. After that I expanded some of the functionalities that he didn't cover. Next up I made proper design, including theme switcher. It's design was probably the biggest challenge for me. I just couldn't get to make it look like according to the added pictures. Then I took some time off the project and next time I fixed it really quickly. <br>
+You can see <a href="https://hardcore-roentgen-d91fce.netlify.app/">site live here</a>.
+
 ![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
